@@ -38,3 +38,27 @@ const jajaGenjang = (alas, tinggi) => {
 }
 
 jajaGenjang(alas * tinggi) 
+
+//========================= Mengetahui sistem gaji ==================================
+alert('gaji karyawan IT DEVELOPMENT')
+
+let inputNickname = prompt('nickname anda : ')
+alert('Yeayy!!🎇🎇 Anda berhasil login kembali, selamat datang ' + inputNickname)
+
+
+const databaseKaryawan = [{profesi : "Developer Web", gaji: 180000}, {profesi : "Developer App", gaji: 200000}, {profesi : "Data Analyst", gaji: 280000}, {profesi : "AI Engineer", gaji: 400000}]
+
+const hariKerja = 25;
+let inputKaryawan = prompt('Apa profesi kamu: ')
+
+if (inputKaryawan == databaseKaryawan[0].profesi) {
+    alert(databaseKaryawan[0].gaji * hariKerja);
+} else if (inputKaryawan == databaseKaryawan[1].profesi) {
+    alert(databaseKaryawan[1].gaji * hariKerja);
+} else if (inputKaryawan == databaseKaryawan[2].profesi) {
+    alert(databaseKaryawan[2].gaji * hariKerja);
+} else if (inputKaryawan == databaseKaryawan[3].profesi) {
+    alert(databaseKaryawan[3].gaji * hariKerja);
+} else {
+    alert('bing bong! profesi salah silahkan coba kembali')
+}
